@@ -10,7 +10,7 @@
 
 % API
 start_link(Args) ->
-	supervisor:start_link({local, ?MODULE}, ?MODULE, Args).
+	supervisor:start_link(?MODULE, Args).
 
 %% supervisor callbacks
 init(Args) ->

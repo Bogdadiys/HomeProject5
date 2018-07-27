@@ -71,8 +71,3 @@ handle_info(delete_obsolete, State) ->
 	{noreply, State#state{interval_timer_Ref = NewIntervalTimerRef}};
 handle_info(_Info, State) -> 
 	{noreply,State}.		
-
-
-	
-	
-
